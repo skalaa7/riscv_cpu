@@ -1,12 +1,10 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Andrej/VHDL_projects/V2_source_codes/RV32I/data_path/immediate.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'immediate'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Andrej/VHDL_projects/V2_source_codes/RV32I/data_path/data_path.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/student/Downloads/riscv_cpu/RV32I/data_path/data_path.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'data_path'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Andrej/VHDL_projects/V2_source_codes/RV32I/control_path/ctrl_decoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/student/Downloads/riscv_cpu/RV32I/control_path/ctrl_decoder.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'ctrl_decoder'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Andrej/VHDL_projects/V2_source_codes/RV32I/control_path/control_path.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/student/Downloads/riscv_cpu/RV32I/control_path/control_path.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'control_path'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Andrej/VHDL_projects/V2_source_codes/RV32I/TOP_RISCV.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/student/Downloads/riscv_cpu/RV32I/TOP_RISCV.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'TOP_RISCV'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Andrej/VHDL_projects/V2_source_codes/RV32I/RISCV_tb/TOP_RISCV_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/student/Downloads/riscv_cpu/RV32I/RISCV_tb/TOP_RISCV_tb.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'TOP_RISCV_tb'

@@ -1,0 +1,246 @@
+
+*** Running vivado
+    with args -log TOP_RISCV.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source TOP_RISCV.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source TOP_RISCV.tcl -notrace
+Command: synth_design -top TOP_RISCV -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 9524
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1016.395 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TOP_RISCV' [C:/Users/student/Downloads/riscv_cpu/RV32I/TOP_RISCV.vhd:21]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'data_path' [C:/Users/student/Downloads/riscv_cpu/RV32I/data_path/data_path.vhd:35]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'register_bank' [C:/Users/student/Downloads/riscv_cpu/RV32I/data_path/register_bank.vhd:28]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'register_bank' (1#1) [C:/Users/student/Downloads/riscv_cpu/RV32I/data_path/register_bank.vhd:28]
+INFO: [Synth 8-638] synthesizing module 'immediate' [C:/Users/student/Downloads/riscv_cpu/RV32I/data_path/immediate.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'immediate' (2#1) [C:/Users/student/Downloads/riscv_cpu/RV32I/data_path/immediate.vhd:12]
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/student/Downloads/riscv_cpu/RV32I/data_path/ALU_simple.vhd:20]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ALU' (3#1) [C:/Users/student/Downloads/riscv_cpu/RV32I/data_path/ALU_simple.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'data_path' (4#1) [C:/Users/student/Downloads/riscv_cpu/RV32I/data_path/data_path.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'control_path' [C:/Users/student/Downloads/riscv_cpu/RV32I/control_path/control_path.vhd:25]
+INFO: [Synth 8-638] synthesizing module 'ctrl_decoder' [C:/Users/student/Downloads/riscv_cpu/RV32I/control_path/ctrl_decoder.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'ctrl_decoder' (5#1) [C:/Users/student/Downloads/riscv_cpu/RV32I/control_path/ctrl_decoder.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'alu_decoder' [C:/Users/student/Downloads/riscv_cpu/RV32I/control_path/alu_decoder.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'alu_decoder' (6#1) [C:/Users/student/Downloads/riscv_cpu/RV32I/control_path/alu_decoder.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'control_path' (7#1) [C:/Users/student/Downloads/riscv_cpu/RV32I/control_path/control_path.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'TOP_RISCV' (8#1) [C:/Users/student/Downloads/riscv_cpu/RV32I/TOP_RISCV.vhd:21]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1016.395 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1016.395 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1016.395 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1016.395 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/student/Downloads/riscv_cpu/RV32I/RISCV_project/RISCV_project.srcs/constrs_1/new/clk.xdc]
+Finished Parsing XDC File [C:/Users/student/Downloads/riscv_cpu/RV32I/RISCV_project/RISCV_project.srcs/constrs_1/new/clk.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1044.738 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1044.738 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1044.738 ; gain = 28.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1044.738 ; gain = 28.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1044.738 ; gain = 28.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1044.738 ; gain = 28.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	  33 Input   32 Bit        Muxes := 2     
+	   8 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 4     
+	   2 Input    5 Bit        Muxes := 2     
+	   7 Input    5 Bit        Muxes := 1     
+	   6 Input    3 Bit        Muxes := 1     
+	   9 Input    3 Bit        Muxes := 1     
+	   7 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 32    
+	   7 Input    1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:07 ; elapsed = 00:02:07 . Memory (MB): peak = 1062.625 ; gain = 46.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:12 ; elapsed = 00:02:13 . Memory (MB): peak = 1062.625 ; gain = 46.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:20 ; elapsed = 00:02:21 . Memory (MB): peak = 1062.625 ; gain = 46.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:24 ; elapsed = 00:02:25 . Memory (MB): peak = 1089.930 ; gain = 73.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:28 ; elapsed = 00:02:29 . Memory (MB): peak = 1104.738 ; gain = 88.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:28 ; elapsed = 00:02:29 . Memory (MB): peak = 1104.738 ; gain = 88.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:28 ; elapsed = 00:02:29 . Memory (MB): peak = 1104.738 ; gain = 88.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:28 ; elapsed = 00:02:29 . Memory (MB): peak = 1104.738 ; gain = 88.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:28 ; elapsed = 00:02:29 . Memory (MB): peak = 1104.738 ; gain = 88.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:28 ; elapsed = 00:02:29 . Memory (MB): peak = 1104.738 ; gain = 88.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    20|
+|3     |LUT1   |     4|
+|4     |LUT2   |    79|
+|5     |LUT3   |    51|
+|6     |LUT4   |    60|
+|7     |LUT5   |   238|
+|8     |LUT6   |   792|
+|9     |MUXF7  |   258|
+|10    |MUXF8  |    64|
+|11    |FDRE   |  1022|
+|12    |IBUF   |    64|
+|13    |OBUF   |   100|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:28 ; elapsed = 00:02:29 . Memory (MB): peak = 1104.738 ; gain = 88.344
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:21 ; elapsed = 00:02:27 . Memory (MB): peak = 1104.738 ; gain = 60.000
+Synthesis Optimization Complete : Time (s): cpu = 00:02:28 ; elapsed = 00:02:29 . Memory (MB): peak = 1104.738 ; gain = 88.344
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 1116.828 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 342 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'TOP_RISCV' is not ideal for floorplanning, since the cellview 'register_bank' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1116.828 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+30 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:34 ; elapsed = 00:02:36 . Memory (MB): peak = 1116.828 ; gain = 100.434
+INFO: [Common 17-1381] The checkpoint 'C:/Users/student/Downloads/riscv_cpu/RV32I/RISCV_project/RISCV_project.runs/synth_1/TOP_RISCV.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file TOP_RISCV_utilization_synth.rpt -pb TOP_RISCV_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Nov  7 19:10:30 2022...

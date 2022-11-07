@@ -49,6 +49,8 @@ architecture Behavioral of data_path is
    --Signali grananja (eng. branch signals).   
    signal bcc                                   : std_logic;
    signal a_sel                                 : std_logic;
+   signal beq_s,bne_s,blt_s,bge_s,bltu_s,bgeu_s : std_logic;
+   signal branch_sel                            : std_logic_vector(2 downto 0);
 --********************************************************
 begin
 
@@ -67,16 +69,33 @@ begin
 
    --***********Kombinaciona logika***********************
    bcc <= instruction_s(12);
-
+   branch_sel<=instruction_s(14 downto 12);
    -- sabirac za uvecavanje programskog brojaca (sledeca instrukcija)
    pc_adder_s     <= std_logic_vector(unsigned(pc_reg_s) + to_unsigned(4, DATA_WIDTH));
    -- sabirac za uslovne skokove
    branch_adder_s <= std_logic_vector(unsigned(immediate_extended_s) + unsigned(pc_reg_s));
 
    -- Provera uslova skoka
-   branch_condition_o <= '1' when a_s = b_s else
+   beq_s <= '1' when rs1_data_s = rs2_data_s else
                          '0';
-
+   bne_s <= '1' when rs1_data_s /= rs2_data_s else
+                         '0';
+   blt_s <= '1' when signed(rs1_data_s) < signed(rs2_data_s) else
+                         '0';
+   bge_s <= '1' when signed(rs1_data_s) >= signed(rs2_data_s) else
+                         '0';
+   bltu_s <= '1' when unsigned(rs1_data_s) = unsigned(rs2_data_s) else
+                         '0';
+   bgeu_s <= '1' when unsigned(rs1_data_s) = unsigned(rs2_data_s) else
+                         '0';
+   branch_condition_o <=beq_s when branch_sel="000" else
+                      bne_s when branch_sel="001" else
+                      blt_s when branch_sel="100" else
+                      bge_s when branch_sel="101" else
+                      bltu_s when branch_sel="110"else
+                      bgeu_s when branch_sel="111"else
+                      '0';                      
+    
    -- MUX koji odredjuje sledecu vrednost za programski brojac.
    -- Ako se ne desi skok programski brojac se uvecava za 4.
    with pc_next_sel_i select

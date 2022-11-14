@@ -22,7 +22,7 @@ architecture Behavioral of immediate is
    --**Otkomentarisati ukoliko je to potrebno prilikom prosirivanja seta instrukcija**
 
    constant u_type_instruction : std_logic_vector(2 downto 0):= "100";
-   --constant j_type_instruction : std_logic_vector(2 downto 0):= "101";
+   constant j_type_instruction : std_logic_vector(2 downto 0):= "101";
    --constant shamt_instruction  : std_logic_vector(2 downto 0):= "110"; 
    --constant fence_ecall_ebreak : std_logic_vector(2 downto 0):= "111";
 
@@ -46,6 +46,8 @@ begin
             instruction_type <= b_type_instruction;
          when "00101" =>
             instruction_type <= u_type_instruction;
+         when "11011" =>
+            instruction_type <= j_type_instruction;
          when others =>
             instruction_type <= r_type_instruction;
       end case;
@@ -64,6 +66,8 @@ begin
             immediate_extended_o <= extension(19 downto 0) & instruction_i(31 downto 25) & instruction_i(11 downto 7);
          when u_type_instruction =>
             immediate_extended_o <=instruction_i(31 downto 12) & std_logic_vector(to_unsigned(0,12));
+         when j_type_instruction =>
+            immediate_extended_o <= extension & instruction_i(31 downto 20);
          when others =>
             immediate_extended_o <= (others => '0');
       end case;

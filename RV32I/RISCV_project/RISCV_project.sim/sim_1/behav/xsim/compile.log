@@ -1,7 +1,3 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/student/Downloads/riscv_cpu/RV32I/data_path/data_path.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'data_path'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/student/Downloads/riscv_cpu/RV32I/control_path/ctrl_decoder.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'ctrl_decoder'
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/student/Downloads/riscv_cpu/RV32I/control_path/control_path.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'control_path'
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/student/Downloads/riscv_cpu/RV32I/TOP_RISCV.vhd" into library xil_defaultlib

@@ -13,9 +13,11 @@ entity control_path is
          pc_next_sel_o      : out  std_logic;         
          alu_src_o          : out std_logic;
          rd_we_o            : out std_logic;
-         a_sel_o            : out std_logic;       
+         a_sel_o            : out std_logic;
+         jump_o             : out std_logic_vector(1 downto 0);
          --********** Ulazni Statusni interfejs **************************************
          branch_condition_i : in  std_logic;
+         
          --********** Izlazni Statusni interfejs **************************************
          data_mem_we_o      : out std_logic_vector(3 downto 0)
          );
@@ -26,15 +28,17 @@ architecture behavioral of control_path is
    signal alu_2bit_op_s : std_logic_vector(1 downto 0);
    signal data_mem_we_s : std_logic;
    signal branch_s: std_logic;
+   signal jump_s: std_logic_vector(1 downto 0);
 begin
 
    process (branch_condition_i, branch_s)is
    begin
       pc_next_sel_o <= '0';
-      if (branch_s = '1' and branch_condition_i = '1')then
+      if ((branch_s = '1' and branch_condition_i = '1') or (jump_s(1)='1' or jump_s(0)='1')) then
          pc_next_sel_o <= '1';
       end if;
    end process;
+   
                     
    ctrl_dec : entity work.ctrl_decoder(behavioral)
       port map(
@@ -45,6 +49,7 @@ begin
          alu_src_o     => alu_src_o,
          rd_we_o       => rd_we_o,
          a_sel_o       => a_sel_o,
+         jump_o        => jump_s,
          alu_2bit_op_o => alu_2bit_op_s);
 
    alu_dec : entity work.alu_decoder(behavioral)
@@ -56,7 +61,6 @@ begin
 
    --***************Izlazi************************
    data_mem_we_o <= (others => (data_mem_we_s));
-
-
+   jump_o<=jump_s;
 end architecture;
 

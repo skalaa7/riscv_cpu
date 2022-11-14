@@ -28,6 +28,7 @@ architecture structural of TOP_RISCV is
    signal func3_s            : std_logic_vector(2 downto 0);
    signal branch_condition_s : std_logic;
    signal pc_next_sel_s      : std_logic;
+   signal jump_s             : std_logic_vector(1 downto 0);
 begin
 
    data_path_1 : entity work.data_path
@@ -48,6 +49,7 @@ begin
          alu_src_i           => alu_src_s,
          rd_we_i             => rd_we_s,
          a_sel_i             => a_sel_s,
+         jump_i              => jump_s,
          branch_condition_o  => branch_condition_s);
 
    control_path_1 : entity work.control_path
@@ -61,6 +63,7 @@ begin
          alu_src_o          => alu_src_s,
          rd_we_o            => rd_we_s,
          a_sel_o            => a_sel_s,
+         jump_o             => jump_s,
          branch_condition_i => branch_condition_s,
          data_mem_we_o      => data_mem_we_o);
    --************************************

@@ -13,6 +13,7 @@ entity ctrl_decoder is
       alu_src_o     : out std_logic;
       rd_we_o       : out std_logic;
       a_sel_o       : out std_logic;
+      jump_o        : out std_logic_vector(1 downto 0);
       alu_2bit_op_o : out std_logic_vector(1 downto 0)
       );
 end entity;
@@ -30,6 +31,7 @@ begin
       rd_we_o       <= '0';
       a_sel_o       <= '0';
       alu_2bit_op_o <= "00";
+      jump_o        <= "00";
       --****************************      
       case opcode_i(6 downto 2) is
          when "00000" =>                --LOAD, 5v ~ funct3
@@ -54,6 +56,13 @@ begin
          when "00101" =>
             alu_src_o     <= '1';
             a_sel_o       <= '1';
+         when "11001" =>             --jalr
+            jump_o(1)     <= '1';
+            rd_we_o       <= '1';
+            alu_src_o     <= '1';
+         when "11011" =>             --jal
+            jump_o(0)     <= '1';
+            rd_we_o       <= '1';
          when others =>
       end case;
    end process;

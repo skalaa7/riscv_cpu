@@ -60,6 +60,7 @@ begin
             jump_o(1)     <= '1';
             rd_we_o       <= '1';
             alu_src_o     <= '1';
+            a_sel_o       <= '1';
          when "11011" =>             --jal
             jump_o(0)     <= '1';
             rd_we_o       <= '1';

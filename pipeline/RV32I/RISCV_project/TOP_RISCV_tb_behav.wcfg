@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="TOP_RISCV_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="TOP_RISCV_tb" />
+            <top_module name="alu_ops_pkg" />
+            <top_module name="controlpath_signals_pkg" />
+            <top_module name="datapath_signals_pkg" />
+            <top_module name="txt_util" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="2752941fs"></ZoomStartTime>
+      <ZoomEndTime time="4839216fs"></ZoomEndTime>
+      <Cursor1Time time="3711809fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="187"></NameColumnWidth>
+      <ValueColumnWidth column_width="74"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="38" />
+   <wvobject fp_name="/TOP_RISCV_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TOP_RISCV_tb/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TOP_RISCV_tb/ena_instr_s" type="logic">
+      <obj_property name="ElementShortName">ena_instr_s</obj_property>
+      <obj_property name="ObjectShortName">ena_instr_s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TOP_RISCV_tb/enb_instr_s" type="logic">
+      <obj_property name="ElementShortName">enb_instr_s</obj_property>
+      <obj_property name="ObjectShortName">enb_instr_s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TOP_RISCV_tb/wea_instr_s" type="array">
+      <obj_property name="ElementShortName">wea_instr_s[3:0]</obj_property>
+      <obj_property name="ObjectShortName">wea_instr_s[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TOP_RISCV_tb/web_instr_s" type="array">
+      <obj_property name="ElementShortName">web_instr_s[3:0]</obj_property>
+      <obj_property name="ObjectShortName">web_instr_s[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TOP_RISCV_tb/addrb_instr_s" type="array">
+      <obj_property name="ElementShortName">addrb_instr_s[9:0]</obj_property>
+      <obj_property name="ObjectShortName">addrb_instr_s[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TOP_RISCV_tb/doutb_instr_s" type="array">
+      <obj_property name="ElementShortName">doutb_instr_s[31:0]</obj_property>
+      <obj_property name="ObjectShortName">doutb_instr_s[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TOP_RISCV_tb/addrb_instr_32_s" type="array">
+      <obj_property name="ElementShortName">addrb_instr_32_s[31:0]</obj_property>
+      <obj_property name="ObjectShortName">addrb_instr_32_s[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TOP_RISCV_tb/if_phase1" type="array">
+      <obj_property name="ElementShortName">if_phase1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">if_phase1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TOP_RISCV_tb/id_phase2" type="array">
+      <obj_property name="ElementShortName">id_phase2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">id_phase2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TOP_RISCV_tb/ex_phase3" type="array">
+      <obj_property name="ElementShortName">ex_phase3[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ex_phase3[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TOP_RISCV_tb/mem_phase4" type="array">
+      <obj_property name="ElementShortName">mem_phase4[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_phase4[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TOP_RISCV_tb/wb_phase5" type="array">
+      <obj_property name="ElementShortName">wb_phase5[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wb_phase5[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TOP_RISCV_tb/id_phase2" type="array">
+      <obj_property name="ElementShortName">id_phase2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">id_phase2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TOP_RISCV_tb/TOP_RISCV_1/data_path_1/pc_next_sel_i" type="logic">
+      <obj_property name="ElementShortName">pc_next_sel_i</obj_property>
+      <obj_property name="ObjectShortName">pc_next_sel_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TOP_RISCV_tb/TOP_RISCV_1/data_path_1/branch_condition_o" type="logic">
+      <obj_property name="ElementShortName">branch_condition_o</obj_property>
+      <obj_property name="ObjectShortName">branch_condition_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TOP_RISCV_tb/TOP_RISCV_1/data_path_1/branch_forward_a_i" type="logic">
+      <obj_property name="ElementShortName">branch_forward_a_i</obj_property>
+      <obj_property name="ObjectShortName">branch_forward_a_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TOP_RISCV_tb/TOP_RISCV_1/data_path_1/branch_forward_b_i" type="logic">
+      <obj_property name="ElementShortName">branch_forward_b_i</obj_property>
+      <obj_property name="ObjectShortName">branch_forward_b_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TOP_RISCV_tb/TOP_RISCV_1/data_path_1/register_bank_1/rs1_address_i" type="array">
+      <obj_property name="ElementShortName">rs1_address_i[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rs1_address_i[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TOP_RISCV_tb/TOP_RISCV_1/data_path_1/register_bank_1/rs1_data_o" type="array">
+      <obj_property name="ElementShortName">rs1_data_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rs1_data_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TOP_RISCV_tb/TOP_RISCV_1/data_path_1/register_bank_1/rs2_address_i" type="array">
+      <obj_property name="ElementShortName">rs2_address_i[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rs2_address_i[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TOP_RISCV_tb/TOP_RISCV_1/data_path_1/register_bank_1/rs2_data_o" type="array">
+      <obj_property name="ElementShortName">rs2_data_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rs2_data_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TOP_RISCV_tb/TOP_RISCV_1/data_path_1/immediate_1/immediate_extended_o" type="array">
+      <obj_property name="ElementShortName">immediate_extended_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">immediate_extended_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TOP_RISCV_tb/ex_phase3" type="array">
+      <obj_property name="ElementShortName">ex_phase3[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ex_phase3[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TOP_RISCV_tb/TOP_RISCV_1/data_path_1/alu_forward_a_i" type="array">
+      <obj_property name="ElementShortName">alu_forward_a_i[1:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_forward_a_i[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TOP_RISCV_tb/TOP_RISCV_1/data_path_1/alu_forward_b_i" type="array">
+      <obj_property name="ElementShortName">alu_forward_b_i[1:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_forward_b_i[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TOP_RISCV_tb/TOP_RISCV_1/data_path_1/alu_src_b_i" type="logic">
+      <obj_property name="ElementShortName">alu_src_b_i</obj_property>
+      <obj_property name="ObjectShortName">alu_src_b_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TOP_RISCV_tb/TOP_RISCV_1/data_path_1/ALU_1/a_i" type="array">
+      <obj_property name="ElementShortName">a_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">a_i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TOP_RISCV_tb/TOP_RISCV_1/data_path_1/ALU_1/b_i" type="array">
+      <obj_property name="ElementShortName">b_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">b_i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TOP_RISCV_tb/TOP_RISCV_1/data_path_1/ALU_1/res_o" type="array">
+      <obj_property name="ElementShortName">res_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">res_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TOP_RISCV_tb/mem_phase4" type="array">
+      <obj_property name="ElementShortName">mem_phase4[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_phase4[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TOP_RISCV_tb/TOP_RISCV_1/data_mem_address_o" type="array">
+      <obj_property name="ElementShortName">data_mem_address_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_mem_address_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TOP_RISCV_tb/TOP_RISCV_1/data_mem_read_i" type="array">
+      <obj_property name="ElementShortName">data_mem_read_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_mem_read_i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TOP_RISCV_tb/TOP_RISCV_1/data_mem_write_o" type="array">
+      <obj_property name="ElementShortName">data_mem_write_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_mem_write_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TOP_RISCV_tb/wb_phase5" type="array">
+      <obj_property name="ElementShortName">wb_phase5[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wb_phase5[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TOP_RISCV_tb/TOP_RISCV_1/data_path_1/register_bank_1/rd_address_i" type="array">
+      <obj_property name="ElementShortName">rd_address_i[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rd_address_i[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TOP_RISCV_tb/TOP_RISCV_1/data_path_1/register_bank_1/rd_data_i" type="array">
+      <obj_property name="ElementShortName">rd_data_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rd_data_i[31:0]</obj_property>
+   </wvobject>
+</wave_config>

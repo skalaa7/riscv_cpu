@@ -1,0 +1,279 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Nov 20 15:25:40 2022
+# Process ID: 9632
+# Current directory: C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/RISCV_project/RISCV_project.runs/synth_1
+# Command line: vivado.exe -log TOP_RISCV.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TOP_RISCV.tcl
+# Log file: C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/RISCV_project/RISCV_project.runs/synth_1/TOP_RISCV.vds
+# Journal file: C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/RISCV_project/RISCV_project.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source TOP_RISCV.tcl -notrace
+Command: synth_design -top TOP_RISCV -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 11748
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1126.414 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TOP_RISCV' [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/TOP_RISCV.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'data_path' [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/data_path/data_path.vhd:41]
+WARNING: [Synth 8-302] global signal 'pc_reg_if_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/datapath_signals_pkg.vhd:8]
+WARNING: [Synth 8-302] global signal 'pc_next_if_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/datapath_signals_pkg.vhd:9]
+WARNING: [Synth 8-302] global signal 'pc_reg_id_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/datapath_signals_pkg.vhd:16]
+WARNING: [Synth 8-302] global signal 'pc_adder_id_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/datapath_signals_pkg.vhd:15]
+WARNING: [Synth 8-302] global signal 'instruction_id_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/datapath_signals_pkg.vhd:14]
+WARNING: [Synth 8-302] global signal 'pc_adder_if_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/datapath_signals_pkg.vhd:10]
+WARNING: [Synth 8-302] global signal 'instruction_if_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/datapath_signals_pkg.vhd:11]
+WARNING: [Synth 8-302] global signal 'pc_adder_ex_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/datapath_signals_pkg.vhd:29]
+WARNING: [Synth 8-302] global signal 'rs1_data_ex_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/datapath_signals_pkg.vhd:37]
+WARNING: [Synth 8-302] global signal 'rs2_data_ex_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/datapath_signals_pkg.vhd:38]
+WARNING: [Synth 8-302] global signal 'immediate_extended_ex_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/datapath_signals_pkg.vhd:30]
+WARNING: [Synth 8-302] global signal 'rd_address_ex_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/datapath_signals_pkg.vhd:39]
+WARNING: [Synth 8-302] global signal 'rs1_data_id_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/datapath_signals_pkg.vhd:17]
+WARNING: [Synth 8-302] global signal 'rs2_data_id_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/datapath_signals_pkg.vhd:18]
+WARNING: [Synth 8-302] global signal 'immediate_extended_id_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/datapath_signals_pkg.vhd:19]
+WARNING: [Synth 8-302] global signal 'rd_address_id_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/datapath_signals_pkg.vhd:25]
+WARNING: [Synth 8-302] global signal 'alu_result_mem_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/datapath_signals_pkg.vhd:43]
+WARNING: [Synth 8-302] global signal 'rs2_data_mem_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/datapath_signals_pkg.vhd:45]
+WARNING: [Synth 8-302] global signal 'pc_adder_mem_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/datapath_signals_pkg.vhd:42]
+WARNING: [Synth 8-302] global signal 'rd_address_mem_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/datapath_signals_pkg.vhd:44]
+WARNING: [Synth 8-302] global signal 'alu_result_ex_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/datapath_signals_pkg.vhd:36]
+WARNING: [Synth 8-302] global signal 'alu_forward_b_ex_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/datapath_signals_pkg.vhd:32]
+WARNING: [Synth 8-302] global signal 'alu_result_wb_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/datapath_signals_pkg.vhd:50]
+WARNING: [Synth 8-302] global signal 'pc_adder_wb_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/datapath_signals_pkg.vhd:49]
+WARNING: [Synth 8-302] global signal 'rd_address_wb_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/datapath_signals_pkg.vhd:52]
+WARNING: [Synth 8-302] global signal 'data_mem_read_wb_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/datapath_signals_pkg.vhd:53]
+WARNING: [Synth 8-302] global signal 'data_mem_read_mem_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/datapath_signals_pkg.vhd:46]
+WARNING: [Synth 8-302] global signal 'branch_adder_id_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/datapath_signals_pkg.vhd:22]
+WARNING: [Synth 8-302] global signal 'branch_condition_a_ex_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/datapath_signals_pkg.vhd:21]
+WARNING: [Synth 8-302] global signal 'branch_condition_b_ex_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/datapath_signals_pkg.vhd:20]
+WARNING: [Synth 8-302] global signal 'alu_forward_a_ex_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/datapath_signals_pkg.vhd:31]
+WARNING: [Synth 8-302] global signal 'rd_data_wb_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/datapath_signals_pkg.vhd:51]
+WARNING: [Synth 8-302] global signal 'b_ex_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/datapath_signals_pkg.vhd:35]
+WARNING: [Synth 8-302] global signal 'rs1_address_id_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/datapath_signals_pkg.vhd:23]
+WARNING: [Synth 8-302] global signal 'rs2_address_id_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/datapath_signals_pkg.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'register_bank' [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/data_path/register_bank.vhd:20]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'register_bank' (1#1) [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/data_path/register_bank.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'immediate' [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/data_path/immediate.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'immediate' (2#1) [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/data_path/immediate.vhd:12]
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/data_path/ALU_simple.vhd:20]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ALU' (3#1) [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/data_path/ALU_simple.vhd:20]
+WARNING: [Synth 8-302] global signal 'alu_zero_ex_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/datapath_signals_pkg.vhd:33]
+WARNING: [Synth 8-302] global signal 'alu_of_ex_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/datapath_signals_pkg.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'data_path' (4#1) [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/data_path/data_path.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'control_path' [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/control_path/control_path.vhd:36]
+WARNING: [Synth 8-302] global signal 'rs1_address_id_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/controlpath_signals_pkg.vhd:23]
+WARNING: [Synth 8-302] global signal 'rs2_address_id_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/controlpath_signals_pkg.vhd:24]
+WARNING: [Synth 8-302] global signal 'rd_address_id_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/controlpath_signals_pkg.vhd:25]
+WARNING: [Synth 8-302] global signal 'funct7_id_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/controlpath_signals_pkg.vhd:14]
+WARNING: [Synth 8-302] global signal 'funct3_id_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/controlpath_signals_pkg.vhd:13]
+WARNING: [Synth 8-302] global signal 'data_mem_we_mem_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/controlpath_signals_pkg.vhd:44]
+WARNING: [Synth 8-302] global signal 'if_id_flush_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/controlpath_signals_pkg.vhd:8]
+WARNING: [Synth 8-302] global signal 'branch_id_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/controlpath_signals_pkg.vhd:12]
+WARNING: [Synth 8-302] global signal 'control_pass_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/controlpath_signals_pkg.vhd:16]
+WARNING: [Synth 8-302] global signal 'branch_ex_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/controlpath_signals_pkg.vhd:29]
+WARNING: [Synth 8-302] global signal 'funct3_ex_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/controlpath_signals_pkg.vhd:30]
+WARNING: [Synth 8-302] global signal 'funct7_ex_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/controlpath_signals_pkg.vhd:31]
+WARNING: [Synth 8-302] global signal 'alu_src_b_ex_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/controlpath_signals_pkg.vhd:33]
+WARNING: [Synth 8-302] global signal 'mem_to_reg_ex_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/controlpath_signals_pkg.vhd:36]
+WARNING: [Synth 8-302] global signal 'alu_2bit_op_ex_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/controlpath_signals_pkg.vhd:32]
+WARNING: [Synth 8-302] global signal 'rs1_address_ex_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/controlpath_signals_pkg.vhd:39]
+WARNING: [Synth 8-302] global signal 'rs2_address_ex_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/controlpath_signals_pkg.vhd:40]
+WARNING: [Synth 8-302] global signal 'rd_address_ex_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/controlpath_signals_pkg.vhd:41]
+WARNING: [Synth 8-302] global signal 'rd_we_ex_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/controlpath_signals_pkg.vhd:35]
+WARNING: [Synth 8-302] global signal 'data_mem_we_ex_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/controlpath_signals_pkg.vhd:34]
+WARNING: [Synth 8-302] global signal 'alu_src_b_id_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/controlpath_signals_pkg.vhd:19]
+WARNING: [Synth 8-302] global signal 'mem_to_reg_id_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/controlpath_signals_pkg.vhd:22]
+WARNING: [Synth 8-302] global signal 'alu_2bit_op_id_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/controlpath_signals_pkg.vhd:15]
+WARNING: [Synth 8-302] global signal 'rd_we_id_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/controlpath_signals_pkg.vhd:21]
+WARNING: [Synth 8-302] global signal 'data_mem_we_id_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/controlpath_signals_pkg.vhd:20]
+WARNING: [Synth 8-302] global signal 'rd_we_mem_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/controlpath_signals_pkg.vhd:45]
+WARNING: [Synth 8-302] global signal 'mem_to_reg_mem_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/controlpath_signals_pkg.vhd:46]
+WARNING: [Synth 8-302] global signal 'rd_address_mem_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/controlpath_signals_pkg.vhd:47]
+WARNING: [Synth 8-302] global signal 'rd_we_wb_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/controlpath_signals_pkg.vhd:50]
+WARNING: [Synth 8-302] global signal 'mem_to_reg_wb_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/controlpath_signals_pkg.vhd:51]
+WARNING: [Synth 8-302] global signal 'rd_address_wb_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/controlpath_signals_pkg.vhd:52]
+INFO: [Synth 8-638] synthesizing module 'ctrl_decoder' [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/control_path/ctrl_decoder.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'ctrl_decoder' (5#1) [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/control_path/ctrl_decoder.vhd:22]
+WARNING: [Synth 8-302] global signal 'rs1_in_use_id_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/controlpath_signals_pkg.vhd:17]
+WARNING: [Synth 8-302] global signal 'rs2_in_use_id_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/controlpath_signals_pkg.vhd:18]
+INFO: [Synth 8-638] synthesizing module 'alu_decoder' [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/control_path/alu_decoder.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'alu_decoder' (6#1) [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/control_path/alu_decoder.vhd:16]
+INFO: [Synth 8-638] synthesizing module 'forwarding_unit' [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/control_path/forwarding_unit.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'forwarding_unit' (7#1) [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/control_path/forwarding_unit.vhd:28]
+INFO: [Synth 8-638] synthesizing module 'hazard_unit' [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/control_path/hazard_unit.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'hazard_unit' (8#1) [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/control_path/hazard_unit.vhd:30]
+WARNING: [Synth 8-302] global signal 'if_id_en_s' treated as architecture-local [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/packages/controlpath_signals_pkg.vhd:7]
+INFO: [Synth 8-256] done synthesizing module 'control_path' (9#1) [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/control_path/control_path.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'TOP_RISCV' (10#1) [C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/TOP_RISCV.vhd:20]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1126.414 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1126.414 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1126.414 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1126.414 ; gain = 0.000
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   32 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	  33 Input   32 Bit        Muxes := 2     
+	   4 Input   32 Bit        Muxes := 1     
+	   5 Input   32 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 2     
+	   6 Input    3 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 1     
+	   5 Input    2 Bit        Muxes := 1     
+	   6 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 33    
+	   6 Input    1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1126.414 ; gain = 0.000
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1126.414 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1126.414 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1126.414 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1126.414 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1126.414 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1126.414 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1126.414 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1126.414 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |OBUFT |   100|
++------+------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   100|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1126.414 ; gain = 0.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 71 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1126.414 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1126.414 ; gain = 0.000
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1126.414 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1205.316 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+30 Infos, 71 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1205.316 ; gain = 78.902
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Andrej/Desktop/git/riscv_cpu/pipeline/RV32I/RISCV_project/RISCV_project.runs/synth_1/TOP_RISCV.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file TOP_RISCV_utilization_synth.rpt -pb TOP_RISCV_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 20 15:26:17 2022...

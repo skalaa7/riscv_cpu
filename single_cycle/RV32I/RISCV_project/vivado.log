@@ -1,0 +1,140 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Nov 14 21:38:39 2022
+# Process ID: 13980
+# Current directory: C:/Users/Andrej/Desktop/git/riscv_cpu/RV32I/RISCV_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15768 C:\Users\Andrej\Desktop\git\riscv_cpu\RV32I\RISCV_project\RISCV_project.xpr
+# Log file: C:/Users/Andrej/Desktop/git/riscv_cpu/RV32I/RISCV_project/vivado.log
+# Journal file: C:/Users/Andrej/Desktop/git/riscv_cpu/RV32I/RISCV_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Andrej/Desktop/git/riscv_cpu/RV32I/RISCV_project/RISCV_project.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/student/Downloads/riscv_cpu/RV32I/RISCV_project' since last save.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'C:/Users/Andrej/Desktop/git/riscv_cpu/RV32I/RISCV_project/RISCV_project.gen/sources_1', nor could it be found using path 'C:/Users/student/Downloads/riscv_cpu/RV32I/RISCV_project/RISCV_project.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:10 . Memory (MB): peak = 1126.309 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Andrej/Desktop/git/riscv_cpu/RV32I/RISCV_project/RISCV_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TOP_RISCV_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Andrej/Desktop/git/riscv_cpu/RV32I/RISCV_project/RISCV_project.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj TOP_RISCV_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Andrej/Desktop/git/riscv_cpu/RV32I/packages/alu_ops_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Andrej/Desktop/git/riscv_cpu/RV32I/data_path/ALU_simple.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ALU'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Andrej/Desktop/git/riscv_cpu/RV32I/RISCV_tb/BRAM_byte_addressable.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'BRAM'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Andrej/Desktop/git/riscv_cpu/RV32I/data_path/register_bank.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'register_bank'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Andrej/Desktop/git/riscv_cpu/RV32I/data_path/immediate.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'immediate'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Andrej/Desktop/git/riscv_cpu/RV32I/data_path/data_path.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'data_path'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Andrej/Desktop/git/riscv_cpu/RV32I/control_path/ctrl_decoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ctrl_decoder'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Andrej/Desktop/git/riscv_cpu/RV32I/control_path/alu_decoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'alu_decoder'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Andrej/Desktop/git/riscv_cpu/RV32I/control_path/control_path.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'control_path'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Andrej/Desktop/git/riscv_cpu/RV32I/TOP_RISCV.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TOP_RISCV'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Andrej/Desktop/git/riscv_cpu/RV32I/packages/txt_util.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Andrej/Desktop/git/riscv_cpu/RV32I/RISCV_tb/TOP_RISCV_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TOP_RISCV_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Andrej/Desktop/git/riscv_cpu/RV32I/RISCV_project/RISCV_project.sim/sim_1/behav/xsim'
+"xelab -wto 1aed0c1f92ec49f6ad2e20f610fc2ca7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TOP_RISCV_tb_behav xil_defaultlib.TOP_RISCV_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 1aed0c1f92ec49f6ad2e20f610fc2ca7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TOP_RISCV_tb_behav xil_defaultlib.TOP_RISCV_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.txt_util
+Compiling package ieee.math_real
+Compiling package xil_defaultlib.alu_ops_pkg
+Compiling architecture behavioral of entity xil_defaultlib.BRAM [bram_default]
+Compiling architecture behavioral of entity xil_defaultlib.register_bank [register_bank_default]
+Compiling architecture behavioral of entity xil_defaultlib.immediate [immediate_default]
+Compiling architecture behavioral of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.data_path [data_path_default]
+Compiling architecture behavioral of entity xil_defaultlib.ctrl_decoder [ctrl_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.alu_decoder [alu_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.control_path [control_path_default]
+Compiling architecture structural of entity xil_defaultlib.TOP_RISCV [top_riscv_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_riscv_tb
+Built simulation snapshot TOP_RISCV_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Andrej/Desktop/git/riscv_cpu/RV32I/RISCV_project/RISCV_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TOP_RISCV_tb_behav -key {Behavioral:sim_1:Functional:TOP_RISCV_tb} -tclbatch {TOP_RISCV_tb.tcl} -view {C:/Users/Andrej/Desktop/git/riscv_cpu/RV32I/RISCV_project/TOP_RISCV_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/Andrej/Desktop/git/riscv_cpu/RV32I/RISCV_project/TOP_RISCV_tb_behav.wcfg
+source TOP_RISCV_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1126.309 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TOP_RISCV_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1126.309 ; gain = 0.000
+current_wave_config {TOP_RISCV_tb_behav.wcfg}
+TOP_RISCV_tb_behav.wcfg
+add_wave {{/TOP_RISCV_tb/TOP_RISCV_1/data_path_1/a_sel_i}} 
+save_wave_config {C:/Users/Andrej/Desktop/git/riscv_cpu/RV32I/RISCV_project/TOP_RISCV_tb_behav.wcfg}
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+restart: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1126.309 ; gain = 0.000
+run 3000 ns
+save_wave_config {C:/Users/Andrej/Desktop/git/riscv_cpu/RV32I/RISCV_project/TOP_RISCV_tb_behav.wcfg}
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+restart: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1126.309 ; gain = 0.000
+run 5000 ns
+current_wave_config {TOP_RISCV_tb_behav.wcfg}
+C:/Users/Andrej/Desktop/git/riscv_cpu/RV32I/RISCV_project/TOP_RISCV_tb_behav.wcfg
+add_wave {{/TOP_RISCV_tb/TOP_RISCV_1/data_path_1/register_bank_1/rs1_address_i}} {{/TOP_RISCV_tb/TOP_RISCV_1/data_path_1/register_bank_1/rs2_address_i}} {{/TOP_RISCV_tb/TOP_RISCV_1/data_path_1/register_bank_1/rd_address_i}} 
+save_wave_config {C:/Users/Andrej/Desktop/git/riscv_cpu/RV32I/RISCV_project/TOP_RISCV_tb_behav.wcfg}
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 5000 ns
+current_wave_config {TOP_RISCV_tb_behav.wcfg}
+C:/Users/Andrej/Desktop/git/riscv_cpu/RV32I/RISCV_project/TOP_RISCV_tb_behav.wcfg
+add_wave {{/TOP_RISCV_tb/TOP_RISCV_1/data_path_1/pc_reg_s}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 5000 ns
+save_wave_config {C:/Users/Andrej/Desktop/git/riscv_cpu/RV32I/RISCV_project/TOP_RISCV_tb_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 14 22:10:43 2022...

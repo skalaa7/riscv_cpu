@@ -59,6 +59,15 @@ begin
          when "1100011" =>              --B tip
             alu_2bit_op_o <= "01";
             branch_o      <= '1';
+         when "0010111" =>              --AUIPC
+            alu_src_b_o   <= '1';
+            rd_we_o       <= '1';
+            rs1_in_use_o  <= '1';
+            rs2_in_use_o  <= '1';
+         when "0110111" =>              --LUI
+            rd_we_o       <= '1';
+            rs1_in_use_o  <= '1';
+            rs2_in_use_o  <= '1';
          when others =>
       end case;
    end process;

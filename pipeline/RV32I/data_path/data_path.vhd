@@ -39,6 +39,7 @@ end entity;
 
 
 architecture Behavioral of data_path is
+signal beq_s,bne_s,blt_s,bge_s,bltu_s,bgeu_s : std_logic;
 begin
 
    --***********  Sekvencijalna logika  ******************
@@ -145,9 +146,26 @@ begin
                               rs2_data_id_s;
 
    -- provera uslova za skok
-   branch_condition_o <= '1' when (signed(branch_condition_a_ex_s) = signed(branch_condition_b_ex_s)) else
+    beq_s<= '1' when (signed(branch_condition_a_ex_s) = signed(branch_condition_b_ex_s)) else
                          '0';
-
+    bne_s<= '1' when (signed(branch_condition_a_ex_s) /= signed(branch_condition_b_ex_s)) else
+                         '0';
+    blt_s<= '1' when (signed(branch_condition_a_ex_s) < signed(branch_condition_b_ex_s)) else
+                         '0'; 
+    bge_s<= '1' when (signed(branch_condition_a_ex_s) > signed(branch_condition_b_ex_s)) else
+                         '0'; 
+    bltu_s<= '1' when (unsigned(branch_condition_a_ex_s) < unsigned(branch_condition_b_ex_s)) else
+                         '0'; 
+    bgeu_s<= '1' when (unsigned(branch_condition_a_ex_s) > unsigned(branch_condition_b_ex_s)) else
+                         '0';                                                                          
+    with instruction_id_s(14 downto 0) select
+        branch_condition_o<=beq_s when "000",
+                            bne_s when "001",
+                            blt_s when "100",
+                            bge_s when "101",
+                            bltu_s when "110",
+                            bgeu_s when others;
+    
    -- multiplekser za azuriranje programskog brojaca
    with pc_next_sel_i select
       pc_next_if_s <= pc_adder_if_s when '0',
